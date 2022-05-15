@@ -9,17 +9,17 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "Cinemas")
+@Table(name = "cinemas")
 public class Cinema {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private long id;
     @Column(name = "name")
     private String Name;
     @Column(name = "location")
     private String city;
-    @Column(name = "maximum number of visitors")
-    private int mnum_visitors;
+    @Column(name = "maximum_number_of_visitors")
+    private int num_visitors;
 
 }
